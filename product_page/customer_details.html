@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="product.css">
+
+        <title>Travogo - Customer Details</title>
+
+        <script src="product.js" async></script>
+    </head>
+
+    <body>
+        <section class="form-section">
+            <h2 class="section-header">Customer Details</h2>
+                <form class="">
+                    <div class="form">
+                        <label class="lable-name" for="first-name">
+                            <span class="content-name">Full name</span>
+                        </label>
+                        <input class="form-input" type="text" name="name" autocomplete="off" required/>
+                    </div>
+                    <br>
+
+                    <div class="form">
+                        <label class="lable-name" for="email">
+                            <span class="content-name">Email</span>
+                        </label>
+                        <input class="form-input" type="text" name="email" autocomplete="off" required/>
+                    </div>
+                    <br>
+
+                    <div class="form">
+                        <label class="lable-name" for="number">
+                            <span class="content-name">Mobile number</span>
+                        </label>
+                        <input class="form-input" type="text" name="number" autocomplete="off" required/>
+                    </div>
+                    <br>
+
+                    <div class="form">
+                        <label class="lable-name" for="address">
+                            <span class="content-name">Shipping address</span>
+                        </label>
+                        <input class="form-input" type="text" name="address" autocomplete="off" required/>
+                    </div>
+                    <br>
+
+                    <div class="form">
+                        <span class="content-name">Card details</span>
+                        <div>
+                            <span>
+                                <label class="lable-name" for="card-number">
+                                    <span class="primary-content-name">Card number</span>
+                                </label>
+                                <input class="form-input" type="text" name="card-number" autocomplete="off" required/>
+                            </span>
+
+                            <span>
+                                <label class="lable-name" for="expiration-date">
+                                    <span class="primary-content-name">Expiration date</span>
+                                </label>
+                                <input class="form-input" type="date" name="expiration-date" autocomplete="off" required/>
+                            </span>
+
+                            <span>
+                                <label class="lable-name" for="security-code">
+                                    <span class="primary-content-name">Security code</span>
+                                </label>
+                                <input class="form-input" type="text" name="security-code" autocomplete="off" required/>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+        </section>
+
+        <button class="btn btn-primary purchase-btn" role="button">Purchase</button>
+
+    </body>
+</html>
