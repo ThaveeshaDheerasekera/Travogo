@@ -15,9 +15,11 @@ html, body {
 }
 
 .main-header{
-    background-image: url("./images/pic.jpg");
+    background-image: url("./images/yaka3.jpg");
     background-size: cover;
     padding-bottom: 30px;
+    height: 900px;
+    position: static;
 }
 
 .logo-image {
@@ -28,10 +30,12 @@ html, body {
 
 .nav ul {
     margin: 0%;
+    padding: 1px;
 }
 
 .nav li {
     display: inline;
+    margin: 5%;
 }
 
 .nav a {
@@ -39,6 +43,7 @@ html, body {
     padding: .5em;
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav a:hover {
@@ -50,6 +55,7 @@ html, body {
     font-size: 1.5em;
     font-weight: lighter;
     border-bottom: 1px solid rgb(255, 255, 255);
+    
 }
 
 .main-nav li {
@@ -67,6 +73,7 @@ html, body {
 .name-large {
     padding-top: 0%;
     font-size: 8em;
+    font-weight: bold;
 }
 
 .content-section {
@@ -112,11 +119,12 @@ html, body {
 .btn-footer {
     margin: .5em 15% 2em 15%;
     color: white;
-    border: 1px solid blue;
+    border: 1px solid white;
     background-color: rgba(255, 266, 255, .1);
-    border-radius: 0;
     font-size: 1.5em;
     font-weight: lighter;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 .btn-footer:hover {
@@ -157,9 +165,9 @@ html, body {
     padding-top: 0;
     padding-bottom: 0;
     color: white;
-    border: 1px solid red;
+    border: 2px solid white;
     background-color: rgba(234, 49, 49, .1);
-    border-radius: 100%;
+    border-radius: 0;
     font-weight: lighter;
 }
 

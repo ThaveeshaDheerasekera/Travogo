@@ -5,27 +5,28 @@
         <meta name="viewport" content="width-=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="product.css">
-        <link rel="stylesheet" href="main.css">
+        <!-- css file -->
+        <link rel="stylesheet" href="products_style.css">
         
+        <!-- title -->
         <title>Travogo - Store</title>
-
-        <script src="product.js" async></script>
+        <!-- javascript file -->
+        <script src="products_js.js" async></script>
     </head>
 
     <body>
+        <!-- header section -->
         <header class="main-header">
             <div class="bgimg-1">
+                <!-- navigation bar -->
                 <nav class="nav main-nav">
                     <ul>
-                        <li><a href="../../nilki/main page/index.html">Home</a></li>
-                        <li><a href="../../thaveesha/prouduct page/Product.html">Store</a></li>
-                        <li><a href="../../ruvik/slide show/slideshow.html">Gallery</a></li>
-                        <li><a href="../../ganguli/quiz/quiz.html">Quiz</a></li>
-                        <li><a href="../../ruvik/site map/sitemap.html">Site map</a></li>
-                        <li><a href="../../ganguli/about us/About_us.html">About us</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <!-- function to change the font size -->
                         <li>
-                            <a href="#About">
+                            <a href="#">
                                 <button onclick="fontIncrease()" class="btn btn-header">+</button>
                                 Font size
                                 <button onclick="fontDecrease()" class="btn btn-header">-</button>
@@ -34,13 +35,14 @@
                     </ul>
                 </nav>
 
+                <!-- logo -->
                 <h1 class="name name-large"><img class="logo-image" src="./Images/capture.png" alt="logo"></h1>
+                <!-- title -->
                 <h1 class="name name-large">Travogo</h1>
             </div>
         </header>
 
-        <div id="x">
-
+        <!-- products -->
         <section class="container content-section">
             <h2 class="section-header">Equipments</h2>
                 <div class="shop-items">
@@ -59,7 +61,7 @@
                     <div class="grid-item">
                         <div class="shop-item">
                             <span class="shop-item-title">Hiking Shoes</span>
-                            <img class="shop-item-image" src="./images/shoes.png" alt="Hiking shoes">
+                            <img class="shop-item-image" src="./images/hiking_shoes.png" alt="Hiking shoes">
                             <div class="shop-item-details">
                                 <span class="shop-item-price">$36.20</span>
                                 <button class="btn btn-primary shop-item-btn" role="button">Add to cart</button>
@@ -81,7 +83,7 @@
                     <div class="grid-item">
                         <div class="shop-item">
                             <span class="shop-item-title">Backpack</span>
-                            <img class="shop-item-image" src="./images/bag.png" alt="Backpack">
+                            <img class="shop-item-image" src="./images/backpack.png" alt="Backpack">
                             <div class="shop-item-details">
                                 <span class="shop-item-price">$25.70</span>
                                 <button class="btn btn-primary shop-item-btn" role="button">Add to cart</button>
@@ -186,19 +188,18 @@
             </div>
 
             <button class="btn btn-primary confirm-btn" role="button">
-                <a class="cd-link" href="customerDetails.html">Place Order</a>
+                <a class="cd-link" href="customer_details.html">Place Order</a>
             </button>
           
         </section>
 
-        </div>
-
+        <!-- footer section -->
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="name">Travogo</h3>
                 <button onclick="backToTop()" class="btn btn-footer">Top</button>
                 <button type="button" class="btn btn-footer">
-                    <a href="page editor.html">About</a>
+                    <a href="../page_editor/page editor.html">About</a>
                 </button>
             </div>
         </footer>
