@@ -1,71 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aclonica&display=swap');
 
-body, html {
-  background-image:url("./images(thaveesha)/yaka3.jpg");
-  background-attachment:fixed;
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-.info{
-	margin:center;
-	margin-top:100px;
+* {
+    font-family: Aclonica;
 }
 
-.editorImg{
-	text-align: center;
+body,
+html {
+    background-image: url("./images(thaveesha)/yaka3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#thaveesha{
-	width:150px;
-	height:160px;
-	border: 1px solid #ddd;
-	border-radius: 100%;
-	padding:8px;
-	/* margin-left:660; */
-	margin-bottom:20px;
+.info {
+    margin: center;
+    margin-top: 100px;
+}
+
+.editorImg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#thaveesha {
+    width: 150px;
+    height: 160px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
 
 }
 
-.name{
-	font-family: 'Carter One', cursive;
-	font-size:30px;
-	color:white;
-	letter-spacing:4px;
-	text-align:center;
-	margin-top:0px;
-}
-.info2{
-	font-family:;
-	font-size:20px;
-	color:white;
-	letter-spacing:2px;
-	text-align:center;
+.name {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 0px;
 }
 
-.roll{
-	font-size:19px;
-	color:white;
-	letter-spacing:2px;
-	text-align:center;
+.info2 {
+    font-family: ;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-.button{
-	font-family: 'Carter One', cursive;
-	font-size:18px;
-	letter-spacing:4px;
-	border: none;
-	color: black;
-	padding: 20px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 12px 680px;
-	cursor: pointer;
-	background-color:white; 
-	border: 2px solid white;
-	border-radius:20px;
+.roll {
+    font-size: 19px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
 }
-.button:hover{
-	opacity:0.6;
+
+.cd-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+    background-color: #CCD1D1;
+}
+
+.btn:hover {
+    background-color: #B2BABB;
 }
