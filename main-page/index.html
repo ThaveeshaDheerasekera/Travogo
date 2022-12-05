@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel ="stylesheet" href="style.css">
+		<script src="../../thaveesha/prouduct page/product.js"></script>
+	</head>
+	<body>
+
+		<div class="bgimg-1"> <!-- COVER IMAGE -->
+			
+				<div class="container">
+					<!--NAVIGATION BAR-->
+					<!-- <div class="navigation_bar"> 
+						<a class="siteName" href="siteName">TRAVOGO</a> 
+						<a href="home">Home  |</a>
+						<a href="quiz">Quiz  |</a>
+						<a href="about">About  |</a>
+						<a href="contact">Contact</a>
+						
+					</div> -->
+					<nav class="nav main-nav">
+						<ul>
+							<li><a href="../../nilki/main page/index.html">Home</a></li>
+							<li><a href="../../thaveesha/prouduct page/Product.html">Store</a></li>
+							<li><a href="../../ruvik/slide show/slideshow.html">Gallery</a></li>
+							<li><a href="../../ganguli/quiz/quiz.html">Quiz</a></li>
+							<li><a href="../../ruvik/site map/sitemap.html">Site map</a></li>
+							<li><a href="../../ganguli/about us/About_us.html">About us</a></li>
+							<li>
+								<a href="#About">
+									<button onclick="fontIncrease()" class="">+</button>
+									Font size
+									<button onclick="fontDecrease()" class="">-</button>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!--WEBSITE LOGO IMAGE-->
+					<div class="logo-wrapper">
+						<img src="./images/capture.png">
+					</div>
+					<div class="logo_name">travogo</div>
+					
+				</div>
+		</div>
+		
+		<!--SECOND PART -->
+		<div id="x" style="background-color:#f0ebeb;text-align:center;padding:50px 80px;text-align: justify;">
+		<h2 >Destinations</h2>
+		<p style="text-align:center;font-size:18px;letter-spacing:5px;">Choose your own favourite Destination.</p><br><br><br>
+		<!--TRAVEL PLACES-->
+		<div>	
+			<div class="destination" id="gallery">
+				<div class="gallery">
+					<a target="_blank" href="./images/colombo.jpeg"> <!--CLICK ON IMAGE AND VEIW IMAGE-->
+					<img src="./images/colombo.jpeg" alt="sigiriya">
+					</a>
+					<div class="text_img">
+						<p>Colombo</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="destination">
+			<div class="gallery">
+				<a target="_blank" href="./images/kandy.jpg">
+			<img src="./images/kandy.jpg" alt="sigiriya">
+			</a>
+			<div class="text_img">
+			<p>Kandy</p>
+			</div>
+			</div>
+			</div>
+		
+			<div class="destination">
+			<div class="gallery">
+				<a target="_blank" href="./images/sigiriya.jpg">
+			<img src="./images/sigiriya.jpg" alt="sigiriya">
+			</a>
+			<div class="text_img">
+			<p>Sigiriya</p>
+			</div>
+			</div>
+			</div>
+		
+			<div class="destination">
+			<div class="gallery">
+				<a target="_blank" href="./images/knuckl.jpg">
+			<img src="./images/knuckl.jpg" alt="Knuckles" >
+			</a>
+			<div class="text_img">
+			<p>Knuckles</p>
+			</div>
+			</div>
+			</div>
+			
+			
+		
+			<div class="destination">
+			<div class="gallery">
+				<a target="_blank" href="./images/hikkaduwa.jpg">
+			<img src="./images/hikkaduwa.jpg" alt="hikkaduwa">
+			</a>
+			<div class="text_img">
+			<p>Hikkaduwa</p>
+			</div>
+			</div>
+			</div>
+			
+		
+			<div class="destination">
+			<div class="gallery">
+				<a target="_blank" href="./images/arugam bay.jpg">
+			<img src="./images/arugam bay.jpg" alt="arugam bay">
+			</a>
+			<div class="text_img">
+			<p>Arugam bay</p>
+			</div>
+			</div>
+			</div>
+		
+		</div>
+	</div>
+		
+		<div class="bgimg-2">
+		</div>
+		
+		<div class="bgimg-3" id="comment" id="x">
+				<div class="wrapper">
+					FOR YOUR SPECIAL REQUESTS AND COMMENTS<br><br>
+					<div class="contact-form">
+						<!--COMMENT FEILD-->
+						<div class="input-fields">
+							Enter Your Name*
+							<input id="name" type="text" class="input" placeholder="Name">
+							Enter Your Email*
+							<input id="email" type="text" class="input" placeholder="Email Address">
+							Rate our website*
+							<select name="rate" id="rate" class="input"><!--RATING-->
+								<option value=" ">Choose an option</option>
+								<option value="Bad">Bad</option>
+								<option value="Good">Good</option>
+								<option value="Very Good">Very Good</option>
+							</select>
+							
+						</div>
+						<div class="msg"><!--COMMENT AREA-->
+							Leave Your Message Here*
+							<textarea placeholder="Message" id="textarea"></textarea>
+							<div class="button" onclick="popUp()">SEND</div><!--SUBMIT BUTTON-->
+						</div>
+					</div>
+				</div>
+		</div>
+				
+	
+	</body>
+	<footer class="main-footer">
+		<div class="container main-footer-container">
+			<h3 class="name">Travogo</h3>
+		</div>
+
+		<ul class="nav footer-nav">
+			<li><a href="nilki/page editor.html">My page editor</a></li>
+      		<li><a href="sitemap.html">Sitemap</a></li>
+		</ul>
+
+		<div class="container font-container content-section">
+			<button onclick="backToTop()" class="btn btn-footer">Top</button>
+		</div>
+	</footer>
+	<script>
+		function popUp(){ 
+			var name = document.getElementById("name").value; /*GET INPUT NAME*/
+			var textarea = document.getElementById("textarea").value;
+			var rate = document.getElementById("rate").value;
+			if(name == "" && rate == ""){ /*IF NAME FEILD EMPTY SHOW ALERT MESSAGE*/
+				alert("empty field , please fill this field");
+			}else if(name == "" || rate == ""){
+				alert("empty field , please fill this field");
+			}else{
+				alert("Dear " + name + ", Thank you very much for your feedback. You have rated your site as," + rate + " you have commented" + textarea);
+			}
+		}
+
+		function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+		function fontIncrease() {
+            content = document.getElementById('x')
+            style = window.getComputedStyle(content, null).getPropertyValue('font-size')
+            currentSize = parseFloat(style)
+            content.style.fontSize = (currentSize + 1) + 'px'
+        }
+        
+        function fontDecrease() {
+            content = document.getElementById('x')
+            style = window.getComputedStyle(content, null).getPropertyValue('font-size')
+            currentSize = parseFloat(style)
+            content.style.fontSize = (currentSize - 1) + 'px'
+        }
+
+	</script>
+	
+	
+</html>
