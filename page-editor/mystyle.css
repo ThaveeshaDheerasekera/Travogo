@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+
+body, html {
+  background-image:url("./images(ganguli)/yaka3.jpg");
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.info{
+	margin:center;
+	margin-top:100px;
+}
+
+.editorImg{
+	text-align: center;
+}
+
+#ganguli{
+	width:150px;
+	height:160px;
+	border: 1px solid #ddd;
+	border-radius: 100%;
+	padding:8px;
+	/* margin-left:660; */
+	margin-bottom:20px;
+
+}
+
+.name{
+	font-family: 'Carter One', cursive;
+	font-size:30px;
+	color:white;
+	letter-spacing:4px;
+	text-align:center;
+	margin-top:0px;
+}
+.info2{
+	font-family:;
+	font-size:20px;
+	color:white;
+	letter-spacing:2px;
+	text-align:center;
+}
+
+.roll{
+	font-size:19px;
+	color:white;
+	letter-spacing:2px;
+	text-align:center;
+}
+
+.button{
+	font-family: 'Carter One', cursive;
+	font-size:18px;
+	letter-spacing:4px;
+	border: none;
+	color: black;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 12px 680px;
+	cursor: pointer;
+	background-color:white; 
+	border: 2px solid white;
+	border-radius:20px;
+}
+.button:hover{
+	opacity:0.6;
+}

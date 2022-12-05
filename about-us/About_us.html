@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="../../thaveesha/prouduct page/product.js"></script>
+    <!-- <link rel="stylesheet" href="pageone.css"> -->
+  </head>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#main-image{
+  height: 500px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(163, 163, 163);
+  padding: 2px 16px;
+  color: black;
+}
+
+.container-fluid{
+  display: inline-block;
+  /* width: 2000px; */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width:100%;
+  height: 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.caracterImage_container{
+    padding: 10px;
+}
+
+.image_container {
+    width: 100%;
+    padding: 2px;
+    margin-top: 50px;
+    /* background-color: #a59c9c; */
+    display: flex;
+}
+.caracter_container {
+    width: 24%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 20px;
+}
+.caracterImage_container img {
+    width: 100%;
+    height: 400px;
+    /* height: 100%; */
+    border-radius: 20px;
+}
+.caracter_discription {
+    justify-content: center;
+    text-align: center;
+}
+.caracter_container:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+</style>
+<body>
+
+  <div class="bgimg-1">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="../../nilki/main page/index.html">Home</a></li>
+        <li><a href="../../thaveesha/prouduct page/Product.html">Store</a></li>
+        <li><a href="../../ruvik/slide show/slideshow.html">Gallery</a></li>
+        <li><a href="../../ganguli/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../ruvik/site map/sitemap.html">Site map</a></li>
+        <li><a href="../../ganguli/about us/About_us.html">About us</a></li>
+          <li>
+              <a href="#About">
+                  <button onclick="fontIncrease()" class="">+</button>
+                  Font size
+                  <button onclick="fontDecrease()" class="">-</button>
+              </a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrapper">
+      <img src="home_images/capture.png" style="height: 450px;">
+    </div>
+  
+
+</div id="x">
+
+<div class="container" id="container">
+
+  <div class="container-fluid">
+      <h1>The team</h1>
+    <div class="image_container">
+        <div class="caracter_container">
+            <div class="caracterImage_container">
+                <img src="./images/thaveesha.jpeg" height="400px">
+            </div>
+            <div class="caracter_discription">
+                <h2>Thaveesha Dheerasekara</h2>
+                <p class="title">Student One</p>
+                <p>Presentation page<br>
+                Product Page<br>
+                Font functionality</p>
+                <p>UOW ID: W1761369</p>
+                <p>IIT ID: 2019483<p>
+                  <p><a href="../../thaveesha/additional page/addition.html">Additonal page about Nuwara eliya</a></p>
+                <a href="mailto:thaveesha.2019483@iit.ac.lk">thaveesha.2019483@iit.ac.lk</a>
+            </div>
+        </div>
+        <div class="caracter_container">
+            <div class="caracterImage_container">
+                <img src="./images/nilki.jpg" height="400px">
+            </div>
+            <div class="caracter_discription">
+                <h2>Nilki<br>Upathissa</h2>
+                <p class="title">Student Two</p>
+                <p>Navigation Bar<br>
+                Main Web page</p>
+                <p>UOW ID: W1761291</p>
+                <p>IIT ID: 2019342<p>
+                  <p><a href="../../nilki/additional page/addition.html">Additonal page about Hikkaduwa</a></p> 
+                <a href="mailto:nilki.2019342@iit.ac.lk">nilki.2019342@iit.ac.lk</a>
+            </div>
+        </div>
+        <div class="caracter_container">
+            <div class="caracterImage_container">
+                <img src="./images/ganguli.jpg">
+            </div>
+            <div class="caracter_discription">
+                <h2>Roshani <br> Ganguli Silva</h2>
+                <p class="title">Student Three</p>
+                <p>Questionire<br>Team Page</p>
+                <p>UOW ID: W1761551</p>
+                <p>IIT ID: 2019084</p>
+                <p><a href="../../ganguli/additional page/additional page.html">Additonal page about Knuckels</a></p> 
+                <a href="mailto:roshani.2019084@iit.ac.lk">roshani.2019084@iit.ac.lk</a>
+            </div>
+        </div>
+        <div class="caracter_container">
+            <div class="caracterImage_container">
+                <img src="./images/ruvik.jpg">
+            </div>
+            <div class="caracter_discription">
+                <h2>Ruvik <br> Hesara Perera</h2>
+                <p class="title">Student Four</p>
+                <p>Site Map<br>
+                Final CSS parts</p>
+                <p>UOW ID: W1761096</p>
+                <p>IIT ID: 2019378<p>
+                 <p><a href="../../ruvik/additional page/additional.html">Additonal page about Arugam Bay</a></p> 
+                <a href="mailto:ruvik.2019378@iit.ac.lk">ruvik.2019378@iit.ac.lk</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="main-footer">
+  <div class=" main-footer-container">
+      <h3 class="name">Travogo</h3>
+  </div>
+
+  <ul class="nav footer-nav">
+      <li><a href="ganguli/page editor.html">My page editor</a></li>
+      <li><a href="sitemap.html">Sitemap</a></li>
+  </ul>
+
+  <div class=" font-container content-section">
+      <button onclick="backToTop()" class="btn btn-footer">Top</button>
+  </div>
+</footer>
+
+<script>
+
+  function getImageSrc(n){
+    var img1Description1 = " Horton Plains ";
+    var img1Description2 = " Sigiriya ";
+    var img1Description3 = " Arugam Bay ";
+    var img1Description4 = " Hikkaduwa ";
+    var img1Description5 = " Kandy ";
+    
+  
+    var imageName = document.getElementById("sub-img"+n).src;
+    document.getElementById("main-image").src = imageName;
+  
+    if(n == 1){
+      document.getElementById("caption").innerText = img1Description1;
+      document.getElementById("description").innerText = "Horton Plains National Park is a protected area in the central highlands of Sri Lanka and is covered by montane grassland and cloud forest.";
+    }else if(n == 2){
+      document.getElementById("caption").innerText = img1Description2;
+      document.getElementById("description").innerText = "Sigiriya is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province.";
+    }else if(n == 3){
+      document.getElementById("caption").innerText = img1Description3;
+      document.getElementById("description").innerText = "Arugam Bay is a bay situated on the Indian Ocean in the dry zone of Sri Lanka's southeast coast, and a historic settlement of the ancient Batticaloa Territory.";
+    }else if(n == 4){
+      document.getElementById("caption").innerText = img1Description4;
+      document.getElementById("description").innerText = "Hikkaduwa is a small town on the south coast of Sri Lanka located in the Southern Province, about 17 km (11 mi) north-west of Galle and 98 km (61 mi) south of Colombo.";
+    }else if(n == 5){
+      document.getElementById("caption").innerText = img1Description5;
+      document.getElementById("description").innerText = "Kandy is a major city in Sri Lanka located in the Central Province.";
+    }
+      // }else{
+    //   document.getElementById("caption").innerText = img1Description6;
+    //   document.getElementById("description").innerText = " naoawfawfww w w dawuh uawd auiwd uawaw dahwpdawwbawfaw awi";
+    // }
+  
+  }
+  
+  function setBackgroundColor(){
+    var value = document.getElementById("background-color").value;
+    if(value == "blue"){
+      document.getElementById("container").style.backgroundColor = "blue";
+    }else if(value == "black"){
+      document.getElementById("container").style.backgroundColor = "black";
+    }else if(value == "green"){
+      document.getElementById("container").style.backgroundColor = "green";
+    }else if(value == "white"){
+      document.getElementById("container").style.backgroundColor = "white";
+    }else if(value == "default"){
+      document.getElementById("container").style.backgroundColor = "#f2f2f2";
+    }
+  }
+  
+  function setFontColor(){
+    var value = document.getElementById("font-color").value;
+    if(value == "blue"){
+      document.getElementById("container").style.color = "blue";
+    }else if(value == "black"){
+      document.getElementById("container").style.color = "black";
+    }else if(value == "green"){
+      document.getElementById("container").style.color = "green";
+    }else if(value == "white"){
+      document.getElementById("container").style.color = "white";
+    }else if(value == "default"){
+      document.getElementById("container").style.color = "black";
+    }
+  }
+  
+  function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  
+  </script>
+</body>
+
+
+</html>

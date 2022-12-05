@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../../thaveesha/prouduct page/product.js"></script>
+    <title> Quiz</title>
+    <link rel="stylesheet" href="quizStyle.css" type="text/css">
+    <!--setting reference to the css file -->
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .quiz-container{
+            width: 500px;
+            text-align: center;
+            display: inline-block;
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .btnBegin{
+            padding: 20px;
+            border-radius: 53px;
+            color: white;
+            background: black;
+            border: none;
+        }
+
+        #ansBtn{
+            padding: 10px;
+            border-radius: 53px;
+            color: white;
+            background: black;
+            border: none;
+        }
+    </style>
+   
+</head>
+
+<body>
+    
+    <div style="height: 650px;" id="x">
+        <div class="bgimg-1">
+            <nav class="nav main-nav">
+              <ul>
+                <li><a href="../../nilki/main page/index.html">Home</a></li>
+                <li><a href="../../thaveesha/prouduct page/Product.html">Store</a></li>
+                <li><a href="../../ruvik/slide show/slideshow.html">Gallery</a></li>
+                <li><a href="../../ganguli/quiz/quiz.html">Quiz</a></li>
+                <li><a href="../../ruvik/site map/sitemap.html">Site map</a></li>
+                <li><a href="../../ganguli/about us/About_us.html">About us</a></li>
+                  <li>
+                      <a href="#About">
+                          <button onclick="fontIncrease()" class="">+</button>
+                          Font size
+                          <button onclick="fontDecrease()" class="">-</button>
+                      </a>
+                  </li>
+              </ul>
+            </nav>
+        
+            <div class="logo-wrapper">
+              <img src="./images/capture.png" style="height: 450px;">
+            </div>
+          
+        
+        </div>
+
+        <!-- Start of the quiz container -->
+        <div class="container">
+            <div class="quiz-container">
+                <div id="font001">
+                    <h1>Quiz</h1>
+                    <text>Time: <text id="timerId">60</text></text><br />
+                    <!-- To show the time -->
+    
+                    <hr />
+                    <!--message before the quiz begins -->
+                    <p id="question">You've got 60 seconds... press OK to begin!<br/>Good luck!</p>
+                    <p id="message002"></p>
+                    <!-- the 4 choices show up here -->
+                    <div id="disappear">
+                        <button class="btnBegin" onclick="begin()">OK</button>
+                    </div>
+    
+                    <!-- For display the performance -->
+                    <p id="q1"></p>
+                    <p id="q2"></p>
+                    <p id="q3"></p>
+                    <p id="q4"></p>
+                    <p id="q5"></p>
+                    <p id="q6"></p>
+                    <p id="q7"></p>
+                    <p id="q8"></p>
+                    <p id="q9"></p>
+                    <p id="q10"></p>
+    
+                    <p id="message003"></p>
+                    <!-- to display some buttons as see performance , ok button -->
+                    <p id="message004"></p>
+    
+                    <hr style="margin-top:40px"><br/>
+                </div>
+                <text id="questionNum"></text>
+                <!--to show the current question number the user is in -->
+            </div>
+            
+
+        </div>
+    </div>
+    
+    
+        
+        
+    
+
+
+    <script src="questionControler.js"></script>
+    <script src="questions.js"></script>
+    <script src="performance.js"></script>
+
+   
+</body>
+
+
+
+
+
+
+</html>
